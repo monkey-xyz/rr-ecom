@@ -1,12 +1,51 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-# products = Product.create([
+
+products = Product.create([
+  {
+    name: "Product I",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: 4.3,
+    quantity: 4,
+    categories: [
+      "category_i",
+      "category _ii"
+    ],
+  },
+  {
+    name: "Product II",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: 4.3,
+    quantity: 4,
+    categories: [
+      "category_iii"
+    ],
+  },
+  {
+    name: "Product III",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: 4.3,
+    quantity: 4,
+    categories: [
+      "category_ii",
+      "category _iv"
+    ],
+  },
+  {
+    name: "Product IV",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: 4.3,
+    quantity: 4,
+    categories: [
+      "category_v",
+      "category _ii"
+    ],
+  }
+])
+
+# images = Image.create([
 #   {
-#     name: ""
+#     img_url: "https://recomstore.s3.us-west-2.amazonaws.com/PlaceholderLC.png",
+#     img_alt: "Placeholder"
 #   }
 # ])
