@@ -6,7 +6,6 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.decimal :price
       t.integer :quantity
       t.decimal :rating
-      t.string :categories, array: true, default: []
 
       t.timestamps
     end
