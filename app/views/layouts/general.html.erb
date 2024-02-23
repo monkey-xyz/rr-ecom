@@ -12,23 +12,22 @@
   </head>
 
   <body>
-    <div>
-      <h1><a href="/">Mini Bodega</a></h1>
+    <div class="flex justify-between">
+      <div>
+        <h1><a href="/">Mini Bodega</a></h1>
+      </div>
 
       <div>
-        <ul>
-          <li>Sign In</li>
-        </ul>
-
         <ul>
           <li>My Profile</li>
           <li>Cart</li>
           <li>Search</li>
+          <li>Sign In</li>
         </ul>
       </div>
     </div>
 
-    <main class="container mx-auto mt-28 px-2 flex">
+    <main class="mx-auto mt-28 px-2">
       <%= yield %>
     </main>
   </body>

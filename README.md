@@ -1,5 +1,8 @@
 # RAILS ECOMMERCE
 
+## HOW TO RUN
+`ruby bin/rails server`
+
 TO-DO:
 
 1. Controllers, views

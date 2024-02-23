@@ -1,9 +1,9 @@
 <ul>
   <%= @products.each do |product| %>
-    <li>
+    <div>
       <a href="products/<%= product.id %>">
         <%= product.name %>
       </a>
-    </li>
+    </div>
   <% end %>
 </ul>
