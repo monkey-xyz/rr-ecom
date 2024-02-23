@@ -9,3 +9,7 @@ WORKDIR /app
 COPY Gemfile* .
 # Runs command to install packages
 RUN bundle install
+# Port
+EXPOSE 3000
+# Executes ./bin/rails server
+CMD ["rails", "server"] 
