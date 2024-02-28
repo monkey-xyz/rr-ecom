@@ -4,15 +4,8 @@
 
 <div>
   <h2>New Arrivals</h2>
-  
-  <%= @products.each do |product| %>
-    <div>
-      <a href="products/<%= product.id %>">
-        <%= product.name %>
-      </a>
-      <%= product.price %>
-    </div>
-  <% end %>
+
+  <%= render "application/product_entry" %>
 </div>
 
 <div>
